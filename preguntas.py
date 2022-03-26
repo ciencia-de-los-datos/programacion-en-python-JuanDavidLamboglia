@@ -9,10 +9,9 @@ básicas.
 
 Utilice el archivo `data.csv` para resolver las preguntas.
 
-# Cargamos los datos (data.csv)
-
 """
 
+# Cargamos los datos (data.csv)
 
 from re import X
 
@@ -25,8 +24,8 @@ def pregunta_01():
     214
 
     """
-x=214
 
+    x=214
     return x
 
 
