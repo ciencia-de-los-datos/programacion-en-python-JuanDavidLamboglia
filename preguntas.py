@@ -9,6 +9,7 @@ básicas.
 
 Utilice el archivo `data.csv` para resolver las preguntas.
 
+# Cargamos los datos (data.csv)
 
 """
 
