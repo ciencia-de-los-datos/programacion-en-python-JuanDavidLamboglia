@@ -11,7 +11,6 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 """
 
-# Cargamos los datos (data.csv)
 
 from re import X
 
@@ -25,8 +24,18 @@ def pregunta_01():
 
     """
 
-    x=214
-    return x
+import csv
+
+with open("data.csv", "r") as file:
+    Tabla = file.readlines()
+
+   Columna2 = [int(row[2]) for row in Tabla]
+
+    Suma = sum(Columna2)
+    
+    print(Suma)
+    
+    return Suma
 
 
 def pregunta_02():
