@@ -9,8 +9,10 @@ básicas.
 
 Utilice el archivo `data.csv` para resolver las preguntas.
 
-
 """
+
+
+from re import X
 
 
 def pregunta_01():
@@ -21,7 +23,19 @@ def pregunta_01():
     214
 
     """
-    return
+
+import csv
+
+with open("data.csv", "r") as file:
+    Tabla = file.readlines()
+
+   Columna2 = [int(row[2]) for row in Tabla]
+
+    Suma = sum(Columna2)
+    
+    print(Suma)
+    
+    return Suma
 
 
 def pregunta_02():
